@@ -1,6 +1,6 @@
 # Microsoft Movie Analysis - Phase 1 Project
 
-![My Image](images\FilmImage.png)
+![filmimage](images\FilmImage.png)
 
 ##### Author: Fridah Kimathi
 
