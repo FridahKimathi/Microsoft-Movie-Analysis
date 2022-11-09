@@ -2,7 +2,7 @@
 
 <img src="images/FilmImage.png" width="500" height="300">
 
-##### Author: Fridah Kimathi
+### Author: Fridah Kimathi
 
 ## Overview
 ***
@@ -130,7 +130,9 @@ Interpreting the results
 ### Visualizations
   * Total box office revenue over the years
 ![My Image](images/gross_years.png)
-
+           
+<img src="images\foreign_Vs_Domestic.png">
+   
   * Preferred movie genres _Vs_ The most profitable movie genres
 ![My Image](images/preferred_vs_profitable.png)
    
