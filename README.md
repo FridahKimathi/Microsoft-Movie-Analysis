@@ -1,6 +1,6 @@
 # Microsoft Movie Analysis - Phase 1 Project
 
-![filmimage](images\FilmImage.png)
+![filmimage](images/FilmImage.png)
 
 ##### Author: Fridah Kimathi
 
@@ -129,19 +129,19 @@ Interpreting the results
 
 ### Visualizations
    * Total box office revenue over the years
-![My Image](images\gross_years.png)
+![My Image](images/gross_years.png)
 
    * Preferred movie genres _Vs_ The most profitable movie genres
-![My Image](images\preferred_vs_profitable.png)
+![My Image](images/preferred_vs_profitable.png)
 
    * Top 5 highest rated genres
-![My Image](images\highest_rated_genres.png)
+![My Image](images/highest_rated_genres.png)
 
    * The correlation between Average rating and total gross
-![My Image](images\ rating_gross.png)
+![My Image](images/rating_gross.png)
 
    * Top 5 studios based on total revenue earned
-![My Image](images\top_5_studios.png)
+![My Image](images/top_5_studios.png)
 
 ## Conclusions
 ***
@@ -168,7 +168,7 @@ Interpreting the results
 
 ## For More Information
 
-Please review our full analysis in [our Jupyter Notebook]() or our [presentation]().
+Please review our full analysis in [our Jupyter Notebook](https://github.com/FridahKimathi/Microsoft-Movie-Analysis/blob/master/Microsoft-Movie-Analyisis.ipynb) or our [presentation](https://github.com/FridahKimathi/Microsoft-Movie-Analysis/blob/master/Microsoft%20Movie%20Analysis%20PPT.pdf).
 
 For any additional questions, please contact **Fridah Kimathi at fridahnkirotekimathi@gmail.com **
 
@@ -177,9 +177,13 @@ For any additional questions, please contact **Fridah Kimathi at fridahnkiroteki
 Describe the structure of your repository and its contents, for example:
 
 ```
-├── README.md                           <- The top-level README for reviewers of this project
-├── dsc-phase1-project-template.ipynb   <- Narrative documentation of analysis in Jupyter notebook
-├── DS_Project_Presentation.pdf         <- PDF version of project presentation
-├── data                                <- Both sourced externally and generated from code
-└── images                              <- Both sourced externally and generated from code
+├── images     <- Both sourced externally and generated from code
+├── zippedData  <- Both sourced externally and generated from code
+├── .canvas        
+├── .gitignore  
+└── Microsoft Movie Analysis PPT.pdf  <- PDF version of project presentation          
+└── Microsoft-Movie-Analyisis.ipynb   <- Narrative documentation of analysis in Jupyter notebook
+└── README.md   <- The top-level README for reviewers of this project
+                                                    
+                                                    
 ```
