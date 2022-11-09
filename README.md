@@ -128,19 +128,19 @@ Interpreting the results
  Our generalizations have good grounding based off the data we have and therefore can aid to enabling Microsoft to make informed decisions of the movies they should make. The data analyzed was collected for the last 10 years therefore it is able to gives us pretty accurate insights. Missing values were carefully replaced to avoid skewed results.Data was aggregated where necessary to help give a clearer picture of the data.
 
 ### Visualizations
-               #### Total box office revenue over the years
+                 * Total box office revenue over the years
 ![My Image](images/gross_years.png)
 
-                #### Preferred movie genres _Vs_ The most profitable movie genres
+                * Preferred movie genres _Vs_ The most profitable movie genres
 ![My Image](images/preferred_vs_profitable.png)
    
-               #### Top 5 highest rated genres**
+               * Top 5 highest rated genres
 ![My Image](images/highest_rated_genres.png)
 
-               #### The correlation between Average rating and total gross
+               * The correlation between Average rating and total gross
  <img src="images\ rating_gross.png">
 
-               #### Top 5 studios based on total revenue earned
+               * Top 5 studios based on total revenue earned
 ![My Image](images/top_5_studios.png)
 
 ***
