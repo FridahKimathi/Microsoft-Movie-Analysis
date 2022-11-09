@@ -49,34 +49,30 @@ The target variables were genres, start_year(movie release year), the total_gros
 ***
 
 ## Methods
-***
 Data cleaning, analysis and visualization
 
 ***
 The three datasets were imported, cleaned, merged and irrelevant columns dropped. 
 Data cleaning was done by:
-    * Identifying duplicates:
+* Identifying duplicates:
 Duplicates were identified using the title column and start year columns. Duplicates were dropped were maintaining entries with the least amount of missing values.
-
-    * Identifying missing values.
+* Identifying missing values.
 A function was created to print out columns that had missing values in each dataset. The genre column for the IMBD title basics dataset had  missing values which comprised 3% of the data, which is a small percentage hence those rows were dropped. 
-    * Changing data types 
+* Changing data types 
 Data types for all three datasets were checked using the _.dtypes_ attribute. Any incorrect data types such as that of the foreign gross column were changed using appropriate method.
-    * Flattened the genre column
+* Flattened the genre column
 The values of each row in the genre column were split into a list. Transformation of each element of the list of genre categories into a row, replicating index values was done.
-
-    * Checking for placeholders or outliers
+* Checking for placeholders or outliers
 A function was defined to print out the contents of each column. The data had no placeholders.There were outliers in the start year column. Some years are in the future. This years were targeted and removed. 
-
-    * Merging of data sets
+* Merging of data sets
 The datasets were then merged and irrelevant columns dropped.
 
 For data analysis, the following was done:
-    * Visualization of the total box office revenue over the years was done using a line plot.
-    * A comparison between the top_10 most preferred movie genres _Vs_ the top_10 most profitable movie genres was done by plotting a bar plot in the same figure with different axes.
-    * The top 5 highest rated genres were visualized using a bar plot.
-    * The correlation between Average rating and total gross was done visualized using a scatter plot.
-    *  A visualization of the top 5 studios based on total revenue earned was done using a bar plot.
+* Visualization of the total box office revenue over the years was done using a line plot.
+* A comparison between the top_10 most preferred movie genres _Vs_ the top_10 most profitable movie genres was done by plotting a bar plot in the same figure with different axes.
+* The top 5 highest rated genres were visualized using a bar plot.
+* The correlation between Average rating and total gross was done visualized using a scatter plot.
+*  A visualization of the top 5 studios based on total revenue earned was done using a bar plot.
 
 *** 
 
