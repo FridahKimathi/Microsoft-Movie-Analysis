@@ -170,7 +170,7 @@ Interpreting the results
 
 Please review our full analysis in [our Jupyter Notebook](https://github.com/FridahKimathi/Microsoft-Movie-Analysis/blob/master/Microsoft-Movie-Analyisis.ipynb) or our [presentation](https://github.com/FridahKimathi/Microsoft-Movie-Analysis/blob/master/Microsoft%20Movie%20Analysis%20PPT.pdf).
 
-For any additional questions, please contact ** Fridah Kimathi at fridahnkirotekimathi@gmail.com **
+For any additional questions, please contact **Fridah Kimathi at fridahnkirotekimathi@gmail.com**
 
 ## Repository Structure
 
