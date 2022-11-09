@@ -53,7 +53,7 @@ Data cleaning, analysis and visualization
 
 ***
 The three datasets were imported, cleaned, merged and irrelevant columns dropped. 
-Data cleaning was done by:
+ Data cleaning was done by:
 * Identifying duplicates:
 Duplicates were identified using the title column and start year columns. Duplicates were dropped were maintaining entries with the least amount of missing values.
 * Identifying missing values.
