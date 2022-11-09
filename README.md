@@ -1,8 +1,8 @@
 # Microsoft Movie Analysis - Phase 1 Project
 
-![My Image](images\FilmImage.png)
+<img src="images/FilmImage.png" width="500" height="300">
 
-##### Author: Fridah Kimathi
+### Author: Fridah Kimathi
 
 ## Overview
 ***
@@ -49,34 +49,30 @@ The target variables were genres, start_year(movie release year), the total_gros
 ***
 
 ## Methods
-***
 Data cleaning, analysis and visualization
 
 ***
 The three datasets were imported, cleaned, merged and irrelevant columns dropped. 
-Data cleaning was done by:
-    * Identifying duplicates:
+ Data cleaning was done by:
+* Identifying duplicates:
 Duplicates were identified using the title column and start year columns. Duplicates were dropped were maintaining entries with the least amount of missing values.
-
-    * Identifying missing values.
+* Identifying missing values.
 A function was created to print out columns that had missing values in each dataset. The genre column for the IMBD title basics dataset had  missing values which comprised 3% of the data, which is a small percentage hence those rows were dropped. 
-    * Changing data types 
+* Changing data types 
 Data types for all three datasets were checked using the _.dtypes_ attribute. Any incorrect data types such as that of the foreign gross column were changed using appropriate method.
-    * Flattened the genre column
+* Flattened the genre column
 The values of each row in the genre column were split into a list. Transformation of each element of the list of genre categories into a row, replicating index values was done.
-
-    * Checking for placeholders or outliers
+* Checking for placeholders or outliers
 A function was defined to print out the contents of each column. The data had no placeholders.There were outliers in the start year column. Some years are in the future. This years were targeted and removed. 
-
-    * Merging of data sets
+* Merging of data sets
 The datasets were then merged and irrelevant columns dropped.
 
 For data analysis, the following was done:
-    * Visualization of the total box office revenue over the years was done using a line plot.
-    * A comparison between the top_10 most preferred movie genres _Vs_ the top_10 most profitable movie genres was done by plotting a bar plot in the same figure with different axes.
-    * The top 5 highest rated genres were visualized using a bar plot.
-    * The correlation between Average rating and total gross was done visualized using a scatter plot.
-    *  A visualization of the top 5 studios based on total revenue earned was done using a bar plot.
+* Visualization of the total box office revenue over the years was done using a line plot.
+* A comparison between the top_10 most preferred movie genres _Vs_ the top_10 most profitable movie genres was done by plotting a bar plot in the same figure with different axes.
+* The top 5 highest rated genres were visualized using a bar plot.
+* The correlation between Average rating and total gross was done visualized using a scatter plot.
+*  A visualization of the top 5 studios based on total revenue earned was done using a bar plot.
 
 *** 
 
@@ -128,28 +124,30 @@ Interpreting the results
  Our generalizations have good grounding based off the data we have and therefore can aid to enabling Microsoft to make informed decisions of the movies they should make. The data analyzed was collected for the last 10 years therefore it is able to gives us pretty accurate insights. Missing values were carefully replaced to avoid skewed results.Data was aggregated where necessary to help give a clearer picture of the data.
 
 ### Visualizations
-   * Total box office revenue over the years
-![My Image](images\gross_years.png)
+  * Total box office revenue over the years
+![My Image](images/gross_years.png)
+           
+<img src="images\foreign_Vs_Domestic.png">
+   
+  * Preferred movie genres _Vs_ The most profitable movie genres
+![My Image](images/preferred_vs_profitable.png)
+   
+  * Top 5 highest rated genres
+![My Image](images/highest_rated_genres.png)
 
-   * Preferred movie genres _Vs_ The most profitable movie genres
-![My Image](images\preferred_vs_profitable.png)
+  * The correlation between Average rating and total gross
+ <img src="images\ rating_gross.png">
 
-   * Top 5 highest rated genres
-![My Image](images\highest_rated_genres.png)
+  * Top 5 studios based on total revenue earned
+![My Image](images/top_5_studios.png)
 
-   * The correlation between Average rating and total gross
-![My Image](images\ rating_gross.png)
-
-   * Top 5 studios based on total revenue earned
-![My Image](images\top_5_studios.png)
-
-## Conclusions
 ***
+## Conclusions
 * There has been a sharp decrease in box office gross earnings since 2018. This can be attributed to the increase preference for movie streaming in platforms such as Netflix. 
 * Adventure, action, comedy and drama are genres that are highly preferred by audiences and also have high profitability. 
 * BV Studio has the highest total gross earnings.
 
-### Recommendation
+## Recommendations
 
  From the results in my analysis, I recommended the following:
 <ol type='i'> 
@@ -158,7 +156,7 @@ Interpreting the results
 <li> Benchmark with top earning movie studios such as BV studios</li>
 </ol>
 
-### Future Plans:
+## Future Plans
 <ol type='i'> 
 <li> Determine profit based on the movie's budget </li>
 <li> Compare streaming services gross earnings and box office gross earnings per movie </li>
@@ -168,18 +166,22 @@ Interpreting the results
 
 ## For More Information
 
-Please review our full analysis in [our Jupyter Notebook]() or our [presentation]().
+Please review my full analysis in [my Jupyter Notebook](https://github.com/FridahKimathi/Microsoft-Movie-Analysis/blob/master/Microsoft-Movie-Analyisis.ipynb) or my [presentation](https://github.com/FridahKimathi/Microsoft-Movie-Analysis/blob/master/Microsoft%20Movie%20Analysis%20PPT.pdf).
 
-For any additional questions, please contact **Fridah Kimathi at fridahnkirotekimathi@gmail.com **
+For any additional questions, please contact **Fridah Kimathi at fridahnkirotekimathi@gmail.com**
 
 ## Repository Structure
 
 Describe the structure of your repository and its contents, for example:
 
 ```
-├── README.md                           <- The top-level README for reviewers of this project
-├── dsc-phase1-project-template.ipynb   <- Narrative documentation of analysis in Jupyter notebook
-├── DS_Project_Presentation.pdf         <- PDF version of project presentation
-├── data                                <- Both sourced externally and generated from code
-└── images                              <- Both sourced externally and generated from code
+├── images     <- Both sourced externally and generated from code
+├── zippedData  <- Both sourced externally and generated from code
+├── .canvas        
+├── .gitignore  
+└── Microsoft Movie Analysis PPT.pdf  <- PDF version of project presentation          
+└── Microsoft-Movie-Analyisis.ipynb   <- Narrative documentation of analysis in Jupyter notebook
+└── README.md   <- The top-level README for reviewers of this project
+                                                    
+                                                    
 ```
