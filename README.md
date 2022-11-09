@@ -1,6 +1,6 @@
 # Microsoft Movie Analysis - Phase 1 Project
 
-![filmimage](images/FilmImage.png)
+![filmimage](images/FilmImage.png =250x250)
 
 ##### Author: Fridah Kimathi
 
@@ -128,28 +128,28 @@ Interpreting the results
  Our generalizations have good grounding based off the data we have and therefore can aid to enabling Microsoft to make informed decisions of the movies they should make. The data analyzed was collected for the last 10 years therefore it is able to gives us pretty accurate insights. Missing values were carefully replaced to avoid skewed results.Data was aggregated where necessary to help give a clearer picture of the data.
 
 ### Visualizations
-   * Total box office revenue over the years
+               * Total box office revenue over the years
 ![My Image](images/gross_years.png)
 
-   * Preferred movie genres _Vs_ The most profitable movie genres
+                * Preferred movie genres _Vs_ The most profitable movie genres
 ![My Image](images/preferred_vs_profitable.png)
-
-   * Top 5 highest rated genres
+   
+               * Top 5 highest rated genres
 ![My Image](images/highest_rated_genres.png)
 
-   * The correlation between Average rating and total gross
+               * The correlation between Average rating and total gross
 ![My Image](images/rating_gross.png)
 
-   * Top 5 studios based on total revenue earned
+                * Top 5 studios based on total revenue earned
 ![My Image](images/top_5_studios.png)
 
-## Conclusions
 ***
+## Conclusions
 * There has been a sharp decrease in box office gross earnings since 2018. This can be attributed to the increase preference for movie streaming in platforms such as Netflix. 
 * Adventure, action, comedy and drama are genres that are highly preferred by audiences and also have high profitability. 
 * BV Studio has the highest total gross earnings.
 
-### Recommendation
+## Recommendations
 
  From the results in my analysis, I recommended the following:
 <ol type='i'> 
@@ -158,7 +158,7 @@ Interpreting the results
 <li> Benchmark with top earning movie studios such as BV studios</li>
 </ol>
 
-### Future Plans:
+## Future Plans
 <ol type='i'> 
 <li> Determine profit based on the movie's budget </li>
 <li> Compare streaming services gross earnings and box office gross earnings per movie </li>
@@ -170,7 +170,7 @@ Interpreting the results
 
 Please review our full analysis in [our Jupyter Notebook](https://github.com/FridahKimathi/Microsoft-Movie-Analysis/blob/master/Microsoft-Movie-Analyisis.ipynb) or our [presentation](https://github.com/FridahKimathi/Microsoft-Movie-Analysis/blob/master/Microsoft%20Movie%20Analysis%20PPT.pdf).
 
-For any additional questions, please contact **Fridah Kimathi at fridahnkirotekimathi@gmail.com **
+For any additional questions, please contact ** Fridah Kimathi at fridahnkirotekimathi@gmail.com **
 
 ## Repository Structure
 
