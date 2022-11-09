@@ -178,9 +178,9 @@ Describe the structure of your repository and its contents, for example:
 ├── images     <- Both sourced externally and generated from code
 ├── zippedData  <- Both sourced externally and generated from code
 ├── .canvas        
-├── .gitignore  
-└── Microsoft Movie Analysis PPT.pdf  <- PDF version of project presentation          
+├── .gitignore 
 └── Microsoft-Movie-Analyisis.ipynb   <- Narrative documentation of analysis in Jupyter notebook
+└── Microsoft-Movie-Analysis-Presentation ppt  <- PDF version of project presentation          
 └── README.md   <- The top-level README for reviewers of this project
                                                     
                                                     
