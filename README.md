@@ -1,65 +1,185 @@
-# Phase 1 Project
+# Microsoft Movie Analysis - Phase 1 Project
 
-You've made it all the way through the first phase of this course - take a minute to celebrate your awesomeness!
+![My Image](images\FilmImage.png)
 
-![awesome](https://raw.githubusercontent.com/learn-co-curriculum/dsc-phase-1-project/master/awesome.gif)
+##### Author: Fridah Kimathi
 
-Now you will put your new skills to use with a large end-of-Phase project! This project should take 20 to 30 hours to complete.
+## Overview
+***
 
-## Project Overview
-
-For this project, you will use exploratory data analysis to generate insights for a business stakeholder.
+Microsoft wishes to create a new movie studio but they have limited knowledge on movie creation. Analysis was made using genres, total gross earnings over the years and ratings. From this analysis, the following recommendations were made: 
+<ol type='i'> 
+<li> Create a streaming platform for their movies </li>
+<li> Produce movies that have a combination of adventure, action, comedy and drama </li>
+<li> Benchmark with top earning movie studios such as BV studios</li>
+</ol>
 
 ### Business Problem
+***
+Due to Microsoft's lack of knowledge in the creation of movies, the following business questions were asked to solve this problem.
 
-Microsoft sees all the big companies creating original video content and they want to get in on the fun. They have decided to create a new movie studio, but they don’t know anything about creating movies. You are charged with exploring what types of films are currently doing the best at the box office. You must then translate those findings into actionable insights that the head of Microsoft's new movie studio can use to help decide what type of films to create.
+***
+
+Questions to considered:
+* What are the business's pain points related to this project?
+Microsoft has very little knowledge about the creation of movies and are unsure of what movies they should produce in there new movie studio
+
+* How did you pick the data analysis question(s) that you did?
+Genre, rating and gross earnings were used to pick the business questions.
+
+* Why are these questions important from a business perspective?
+Microsoft can be able to make informed decisions on the type of movie genres to produce.
+
+***
 
 ### The Data
+***
+This project used 3 datasets, two from _imbd_ and one from _bom_.
+***
+Questions to considered:
 
-In the folder `zippedData` are movie datasets from:
+* Where did the data come from, and how do they relate to the data analysis questions?
+BOM movie_gross dataset has important columns such as  studio, domestic_gross and foreign_gross.
+IMBD title basics dataset has substantial columns such as start_year, runtime_minutes and genres.
+IMBD ratings dataset has important columns such as average rating and number of votes 
 
-* [Box Office Mojo](https://www.boxofficemojo.com/)
-* [IMDB](https://www.imdb.com/)
-* [Rotten Tomatoes](https://www.rottentomatoes.com/)
-* [TheMovieDB](https://www.themoviedb.org/)
-* [The Numbers](https://www.the-numbers.com/)
+* What is the target variable?
+The target variables were genres, start_year(movie release year), the total_gross (combination of domestic and foreign gross)
 
-It is up to you to decide what data from this to use and how to use it. If you want to make this more challenging, you can scrape websites or make API calls to get additional data. If you are feeling overwhelmed or behind (e.g. struggled with the Phase 1 Code Challenge), we recommend you use only the following data files:
+***
 
-* imdb.title.basics
-* imdb.title.ratings
-* bom.movie_gross
+## Methods
+***
+Data cleaning, analysis and visualization
 
-## Deliverables
+***
+The three datasets were imported, cleaned, merged and irrelevant columns dropped. 
+Data cleaning was done by:
+    * Identifying duplicates:
+Duplicates were identified using the title column and start year columns. Duplicates were dropped were maintaining entries with the least amount of missing values.
 
-There are three deliverables for this project:
+    * Identifying missing values.
+A function was created to print out columns that had missing values in each dataset. The genre column for the IMBD title basics dataset had  missing values which comprised 3% of the data, which is a small percentage hence those rows were dropped. 
+    * Changing data types 
+Data types for all three datasets were checked using the _.dtypes_ attribute. Any incorrect data types such as that of the foreign gross column were changed using appropriate method.
+    * Flattened the genre column
+The values of each row in the genre column were split into a list. Transformation of each element of the list of genre categories into a row, replicating index values was done.
 
-* A **GitHub repository**
-* A **Jupyter Notebook**
-* A **non-technical presentation**
+    * Checking for placeholders or outliers
+A function was defined to print out the contents of each column. The data had no placeholders.There were outliers in the start year column. Some years are in the future. This years were targeted and removed. 
 
-Review the "Project Submission & Review" page in the "Milestones Instructions" topic for instructions on creating and submitting your deliverables. Refer to the rubric associated with this assignment for specifications describing high-quality deliverables.
+    * Merging of data sets
+The datasets were then merged and irrelevant columns dropped.
 
-### Key Points
+For data analysis, the following was done:
+    * Visualization of the total box office revenue over the years was done using a line plot.
+    * A comparison between the top_10 most preferred movie genres _Vs_ the top_10 most profitable movie genres was done by plotting a bar plot in the same figure with different axes.
+    * The top 5 highest rated genres were visualized using a bar plot.
+    * The correlation between Average rating and total gross was done visualized using a scatter plot.
+    *  A visualization of the top 5 studios based on total revenue earned was done using a bar plot.
 
-* **Your analysis should yield three concrete business recommendations.** The ultimate purpose of exploratory analysis is not just to learn about the data, but to help an organization perform better. Explicitly relate your findings to business needs by recommending actions that you think the business (Microsoft) should take.
+*** 
 
-* **Communicating about your work well is extremely important.** Your ability to provide value to an organization - or to land a job there - is directly reliant on your ability to communicate with them about what you have done and why it is valuable. Create a storyline your audience (the head of Microsoft's new movie studio) can follow by walking them through the steps of your process, highlighting the most important points and skipping over the rest.
+## Results
 
-* **Use plenty of visualizations.** Visualizations are invaluable for exploring your data and making your findings accessible to a non-technical audience. Spotlight visuals in your presentation, but only ones that relate directly to your recommendations. Simple visuals are usually best (e.g. bar charts and line graphs), and don't forget to format them well (e.g. labels, titles).
+Interpreting the results
 
-## Getting Started
+***
+**_Observations for Total box office revenue over the years_**:
+ <ul type='square'> 
+    <li>Movies made a lot of money in 2018. </li>
+    <li>There has been a sharp decrease in total gross earned by movies since 2018, with the lowest year being 2020. </br>
+        This makes sense since streaming platforms started gaining a lot of hype in 2018, leading to lot of people preferring to stream movies on platforms such as Netflix hence the decline in box office revenues.</li>
+     <li>Movies made zero box office revenue in 2020. </br>
+        This is because COVID started in 2020, which lead to the closure of movie theaters in a lot of countries hence there was no box office revenue for movies that year.
+     </li>
+ </ul>
+ 
+ **_Observations for the preferred movie genres _Vs_ The most profitable movie genres_**:
+<ul> 
+       <li>Drama is the most preferred movie genre. </li>
+       <li>Romance, Thriller, Horror which are in the top 10 most preferred movies is not in the top 10 most profitable movies </li>
+      <li>Adventure is the most profitable movie genre. </li>
+      <li> Animation, Fantasy and Family are in the top 10 most profitable movies but are not in the top 10 most preferred genres</li>
+            
+ </ul>
 
-Please start by reviewing this assignment, the rubric at the bottom of it, and the "Project Submission & Review" page. If you have any questions, please ask your instructor ASAP.
+ **_Observations for the top 5 highest rated genres_**:
+<ul type='square'> 
+       <li>Documentary is the highest rated movie genre. </li>
+       <li>The first four genres, that is Documentary, drama , comedy and biography are also in the top ten most preferred/profitable movies </li>
+       <li>History is not in the top ten most preferred/profitable movies </li>          
+ </ul>
 
-Next, we recommend you check out [the Phase 1 Project Templates and Examples repo](https://github.com/learn-co-curriculum/dsc-project-template) and use the MVP template for your project.
+ **_Observations for the correlation between Average rating and total gross_**:
+<ul type='square'> 
+       <li>There is no correlation between average rating and the total revenue earned </li>
+       <li> Majority of movies make a total gross of less than 400 million dollars  </li>
+        <li> Majority of movies have an average rating higher than 4  </li     
+ </ul>
 
-Alternatively, you can fork [the Phase 1 Project Repository](https://github.com/learn-co-curriculum/dsc-phase-1-project), clone it locally, and work in the `student.ipynb` file. Make sure to also add and commit a PDF of your presentation to your repository with a file name of `presentation.pdf`.
+ **_Observations for the Top 5 studios based on total revenue earned_**:
+<ul type='square'> 
+       <li>BV studio is the highest earning studio </li>
+       <li> Fox and Uni.Studio have approximately the same gross earnings</li>
+        <li> All 5 studios have a gross total greater than 400 million dollars </li     
+ </ul>
 
-## Project Submission and Review
+ Our generalizations have good grounding based off the data we have and therefore can aid to enabling Microsoft to make informed decisions of the movies they should make. The data analyzed was collected for the last 10 years therefore it is able to gives us pretty accurate insights. Missing values were carefully replaced to avoid skewed results.Data was aggregated where necessary to help give a clearer picture of the data.
 
-Review the "Project Submission & Review" page in the "Milestones Instructions" topic to learn how to submit your project and how it will be reviewed. Your project must pass review for you to progress to the next Phase.
+### Visualizations
+   * Total box office revenue over the years
+![My Image](images\gross_years.png)
 
-## Summary
+   * Preferred movie genres _Vs_ The most profitable movie genres
+![My Image](images\preferred_vs_profitable.png)
 
-This project will give you a valuable opportunity to develop your data science skills using real-world data. The end-of-phase projects are a critical part of the program because they give you a chance to bring together all the skills you've learned, apply them to realistic projects for a business stakeholder, practice communication skills, and get feedback to help you improve. You've got this!
+   * Top 5 highest rated genres
+![My Image](images\highest_rated_genres.png)
+
+   * The correlation between Average rating and total gross
+![My Image](images\ rating_gross.png)
+
+   * Top 5 studios based on total revenue earned
+![My Image](images\top_5_studios.png)
+
+## Conclusions
+***
+* There has been a sharp decrease in box office gross earnings since 2018. This can be attributed to the increase preference for movie streaming in platforms such as Netflix. 
+* Adventure, action, comedy and drama are genres that are highly preferred by audiences and also have high profitability. 
+* BV Studio has the highest total gross earnings.
+
+### Recommendation
+
+ From the results in my analysis, I recommended the following:
+<ol type='i'> 
+<li> Create a streaming platform for their movies </li>
+<li> Produce movies that have a combination of adventure, action, comedy and drama </li>
+<li> Benchmark with top earning movie studios such as BV studios</li>
+</ol>
+
+### Future Plans:
+<ol type='i'> 
+<li> Determine profit based on the movie's budget </li>
+<li> Compare streaming services gross earnings and box office gross earnings per movie </li>
+<li> Assess the relationship between genre and number of votes or what influences the number of votes per movie</li>
+</ol>
+
+
+## For More Information
+
+Please review our full analysis in [our Jupyter Notebook]() or our [presentation]().
+
+For any additional questions, please contact **Fridah Kimathi at fridahnkirotekimathi@gmail.com **
+
+## Repository Structure
+
+Describe the structure of your repository and its contents, for example:
+
+```
+├── README.md                           <- The top-level README for reviewers of this project
+├── dsc-phase1-project-template.ipynb   <- Narrative documentation of analysis in Jupyter notebook
+├── DS_Project_Presentation.pdf         <- PDF version of project presentation
+├── data                                <- Both sourced externally and generated from code
+└── images                              <- Both sourced externally and generated from code
+```
