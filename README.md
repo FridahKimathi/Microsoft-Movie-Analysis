@@ -1,6 +1,6 @@
 # Microsoft Movie Analysis - Phase 1 Project
 
-![filmimage](images/FilmImage.png | width=300)
+<img src="images/FilmImage.png" width="100" height="100">
 
 ##### Author: Fridah Kimathi
 
@@ -138,7 +138,7 @@ Interpreting the results
 ![My Image](images/highest_rated_genres.png)
 
                * The correlation between Average rating and total gross
-![My Image](images/ rating_gross.png)
+![My Image](images/rating_gross.png)
 
                 * Top 5 studios based on total revenue earned
 ![My Image](images/top_5_studios.png)
