@@ -118,7 +118,7 @@ Interpreting the results
         <li> Majority of movies have an average rating higher than 4  </li     
  </ul>
 
- **_Observations for the Top 5 studios based on total revenue earned_**:
+ _**Observations for the Top 5 studios based on total revenue earned**_:
 <ul type='square'> 
        <li>BV studio is the highest earning studio </li>
        <li> Fox and Uni.Studio have approximately the same gross earnings</li>
