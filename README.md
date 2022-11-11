@@ -58,17 +58,17 @@ Data cleaning was done by:
     * Identifying duplicates:
 Duplicates were identified using the title column and start year columns. Duplicates were dropped were maintaining entries with the least amount of missing values.
 
-    * Identifying missing values.
+   * Identifying missing values.
 A function was created to print out columns that had missing values in each dataset. The genre column for the IMBD title basics dataset had  missing values which comprised 3% of the data, which is a small percentage hence those rows were dropped. 
     * Changing data types 
 Data types for all three datasets were checked using the _.dtypes_ attribute. Any incorrect data types such as that of the foreign gross column were changed using appropriate method.
     * Flattened the genre column
 The values of each row in the genre column were split into a list. Transformation of each element of the list of genre categories into a row, replicating index values was done.
 
-    * Checking for placeholders or outliers
+   * Checking for placeholders or outliers
 A function was defined to print out the contents of each column. The data had no placeholders.There were outliers in the start year column. Some years are in the future. This years were targeted and removed. 
 
-    * Merging of data sets
+   * Merging of data sets
 The datasets were then merged and irrelevant columns dropped.
 
 For data analysis, the following was done:
@@ -117,8 +117,8 @@ Interpreting the results
        <li> Majority of movies make a total gross of less than 400 million dollars  </li>
         <li> Majority of movies have an average rating higher than 4  </li     
  </ul>
-
- _**Observations for the Top 5 studios based on total revenue earned**_:
+           
+ **_Observations for the Top 5 studios based on total revenue earned_**:
 <ul type='square'> 
        <li>BV studio is the highest earning studio </li>
        <li> Fox and Uni.Studio have approximately the same gross earnings</li>
@@ -138,7 +138,7 @@ Interpreting the results
 <img src="images\highest_rated_genres.png">  
 
   The correlation between Average rating and total gross
-<img src="images\rating_gross.png">  
+<img src="images\ rating_gross.png">  
            
   Top 5 studios based on total revenue earned
 <img src="images\top_5_studios.png">
