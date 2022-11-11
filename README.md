@@ -118,32 +118,32 @@ Interpreting the results
 <ul type='square'> 
        <li>There is no correlation between average rating and the total revenue earned </li>
        <li> Majority of movies make a total gross of less than 400 million dollars  </li>
-        <li> Majority of movies have an average rating higher than 4  </li     
+      <li> Majority of movies have an average rating higher than 4  </li>  
  </ul>
               
  **Observations for the Top 5 studios based on total revenue earned**:
 <ul type='square'> 
        <li>BV studio is the highest earning studio </li>
        <li> Fox and Uni.Studio have approximately the same gross earnings</li>
-        <li> All 5 studios have a gross total greater than 400 million dollars </li     
+      <li> All 5 studios have a gross total greater than 400 million dollars </li>
  </ul>
 
- Our generalizations have good grounding based off the data we have and therefore can aid to enabling Microsoft to make informed decisions of the movies they should make. The data analyzed was collected for the last 10 years therefore it is able to gives us pretty accurate insights. Missing values were carefully replaced to avoid skewed results.Data was aggregated where necessary to help give a clearer picture of the data.
+The generalizations have good grounding based off the data given and therefore can aid Microsoft to make informed decisions of the movies they should make. The data analyzed was collected for the last 10 years therefore it is able to gives us pretty accurate insights. Missing values were carefully replaced to avoid skewed results.Data was aggregated where necessary to help give a clearer picture of the data.
 
 ### Visualizations
-           **Total box office revenue over the years**
+           Total box office revenue over the years
 <img src="images\gross_years.png">
 
-           **Preferred movie genres _Vs_ The most profitable movie genres**
+           Preferred movie genres _Vs_ The most profitable movie genres
 <img src="images\preferred_vs_profitable.png">      
 
-          **Top 5 highest rated genres**
+          Top 5 highest rated genres
 <img src="images\highest_rated_genres.png">  
 
-          **The correlation between Average rating and total gross**
+          The correlation between Average rating and total gross
 <img src="images\ rating_gross.png">  
            
-           **Top 5 studios based on total revenue earned**
+          Top 5 studios based on total revenue earned
 <img src="images\top_5_studios.png">
 
 ## Conclusions
