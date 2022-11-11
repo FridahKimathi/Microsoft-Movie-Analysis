@@ -177,9 +177,22 @@ For any additional questions, please contact **Fridah Kimathi at fridahnkiroteki
 Describe the structure of your repository and its contents, for example:
 
 ```
+<<<<<<< HEAD
 ├── README.md                           <- The top-level README for reviewers of this project
 ├── dsc-phase1-project-template.ipynb   <- Narrative documentation of analysis in Jupyter notebook
 ├── DS_Project_Presentation.pdf         <- PDF version of project presentation
 ├── data                                <- Both sourced externally and generated from code
 └── images                              <- Both sourced externally and generated from code
 ```
+=======
+├── images     <- Both sourced externally and generated from code
+├── zippedData  <- Both sourced externally and generated from code
+├── .canvas        
+├── .gitignore 
+└── Microsoft-Movie-Analyisis.ipynb   <- Narrative documentation of analysis in Jupyter notebook
+└── Microsoft-Movie-Analysis-Presentation ppt  <- PDF version of project presentation          
+└── README.md   <- The top-level README for reviewers of this project
+                                                    
+                                                    
+```
+>>>>>>> 8d90c965fea21b3737a5a610b25dd13d07d3f140
