@@ -1,6 +1,6 @@
 # Microsoft Movie Analysis - Phase 1 Project
 
-![My Image](images\FilmImage.png)
+<img src="images\FilmImage.png" alt="Girl in a jacket" width="400" height="250">
 
 ##### Author: Fridah Kimathi
 
