@@ -171,31 +171,18 @@ The generalizations have good grounding based off the data given and therefore c
 
 ## For More Information
 
-Please review our full analysis in [our Jupyter Notebook]() or our [presentation]().
+See the full analysis in the [Jupyter Notebook](https://github.com/FridahKimathi/Microsoft-Movie-Analysis/blob/master/Microsoft-Movie-Analyisis.ipynb) or review this [presentation](https://github.com/FridahKimathi/Microsoft-Movie-Analysis/blob/master/Microsoft-Movie-Analysis-Presentation%20ppt.pdf).
 
-For any additional questions, please contact **Fridah Kimathi at fridahnkirotekimathi@gmail.com **
+For additional info, contact Fridah Kimathi at [fridahnkirotekimathi@gmail.com](mailto:fridahnkirotekimathi@gmail.com) or via my [LinkedIn profile](https://www.linkedin.com/in/fridah-kimathi-91608418b/).
 
 ## Repository Structure
 
-Describe the structure of your repository and its contents, for example:
-
 ```
-<<<<<<< HEAD
-├── README.md                           <- The top-level README for reviewers of this project
-├── dsc-phase1-project-template.ipynb   <- Narrative documentation of analysis in Jupyter notebook
-├── DS_Project_Presentation.pdf         <- PDF version of project presentation
-├── data                                <- Both sourced externally and generated from code
-└── images                              <- Both sourced externally and generated from code
+├── images
+├── zippedData
+├── .canvas
+├── .gitignore
+├── Microsoft-Movie-Analyisis.ipynb
+├── Microsoft-Movie-Analysis-Presentation ppt.pdf
+└── README.md
 ```
-=======
-├── images     <- Both sourced externally and generated from code
-├── zippedData  <- Both sourced externally and generated from code
-├── .canvas        
-├── .gitignore 
-└── Microsoft-Movie-Analyisis.ipynb   <- Narrative documentation of analysis in Jupyter notebook
-└── Microsoft-Movie-Analysis-Presentation ppt  <- PDF version of project presentation          
-└── README.md   <- The top-level README for reviewers of this project
-                                                    
-                                                    
-```
->>>>>>> 8d90c965fea21b3737a5a610b25dd13d07d3f140
